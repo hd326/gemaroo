@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <link rel="stylesheet" href="../fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css">
+    <script src="../jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Real Estate App</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="header-box">
+
+            <div id="left-header">
+                <h1><span id="home" class="fa fa-home fa-1x"></span>gemaroo</h1>
+            </div>
+
+            <div id="right-header">
+                <nav>
+                    <ul>
+                        <li><a href="">Create ads</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Log In</a></li>
+                        <li><input type="submit" value="Register"></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="menu"></div>
+    </header>
+
+
+    <div id="main">
+        <div id="bar-holder">
+            <div id="bar">
+            </div>
+            <form action="../homes/index.php?action=homelist" method="post">
+
+                <div id="bar-content">
+
+
+                    <div class="baritems">
+                        <input type="text" name="city" placeholder="Type a city. zip, address, or MLS#">
+                    </div>
+
+                    <div class="baritems">
+                        <select name="bdrms">
+                    <option>Bedrooms</option>
+                        <option type="text" value="1">1 or more</option>
+                        <option type="text" value="2">2 or more</option>
+                        <option type="text" value="3">3 or more</option>
+                        <option type="text" value="4">4 or more</option>
+                        <option type="text" value="5">5 or more</option>
+                        <option type="text" value="6">6 or more</option>
+                </select>
+                    </div>
+
+                    <div class="baritems">
+                        <select name="baths">
+                    <option>Baths</option>
+                    <option type="text" value="1">1 or more</option>
+                    <option type="text" value="2">2 or more</option>
+                    <option type="text" value="3">3 or more</option>
+                    <option type="text" value="4">4 or more</option>
+                </select>
+                    </div>
+
+                    <div class="baritems">
+                        <select name="min">
+                    <option>Min Price</option>
+                    <option type="text" value="100000">$100,000</option>
+                    <option type="text" value="200000">$200,000</option>
+                    <option type="text" value="300000">$300,000</option>
+                    <option type="text" value="400000">$400,000</option>
+                    <option type="text" value="500000">$500,000</option>
+                    <option type="text" value="600000">$600,000</option>
+                    <option type="text" value="700000">$700,000</option>
+                    <option type="text" value="800000">$800,000</option>
+                    <option type="text" value="900000">$900,000</option>
+                    <option type="text" value="1000000">$1,000,000</option>
+                </select>
+                    </div>
+
+                    <div class="baritems">
+                        <select name="max">
+                    <option>Max Price</option>
+                    <option type="text" value="100000">$100,000</option>
+                    <option type="text" value="200000">$200,000</option>
+                    <option type="text" value="300000">$300,000</option>
+                    <option type="text" value="400000">$400,000</option>
+                    <option type="text" value="500000">$500,000</option>
+                    <option type="text" value="600000">$600,000</option>
+                    <option type="text" value="700000">$700,000</option>
+                    <option type="text" value="800000">$800,000</option>
+                    <option type="text" value="900000">$900,000</option>
+                    <option type="text" value="1000000">$1,000,000</option>
+                </select>
+                    </div>
+
+                    <div class="baritems">
+                        <button type="submit" class="fa fa-search fa-1x"></button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- begin the second bar -->
+
+    <div id="bar-holder0">
+        <div id="bar-content0">
+            <div class="baritems0">
+                <input placeholder="Type a city. zip, address, or MLS#">
+            </div>
+
+            <div class="baritems0">
+                <select>
+                    <option>Bedrooms</option>
+                    <option>1 or more</option>
+                        <option>2 or more</option>
+                        <option>3 or more</option>
+                        <option>4 or more</option>
+                        <option>5 or more</option>
+                        <option>6 or more</option>
+                </select>
+            </div>
+
+            <div class="baritems0">
+                <select>
+                    <option>Baths</option>
+                    <option>1 or more</option>
+                    <option>2 or more</option>
+                    <option>3 or more</option>
+                    <option>4 or more</option>
+                </select>
+            </div>
+
+            <div class="baritems0">
+                <select>
+                    <option>Min Price</option>
+                    <option>$100,000</option>
+                    <option>$200,000</option>
+                    <option>$300,000</option>
+                    <option>$400,000</option>
+                    <option>$500,000</option>
+                    <option>$600,000</option>
+                    <option>$700,000</option>
+                    <option>$800,000</option>
+                    <option>$900,000</option>
+                    <option>$1,000,000</option>
+                </select>
+            </div>
+
+            <div class="baritems0">
+                <select>
+                    <option>Max Price</option>
+                    <option>$100,000</option>
+                    <option>$200,000</option>
+                    <option>$300,000</option>
+                    <option>$400,000</option>
+                    <option>$500,000</option>
+                    <option>$600,000</option>
+                    <option>$700,000</option>
+                    <option>$800,000</option>
+                    <option>$900,000</option>
+                    <option>$1,000,000</option>
+                </select>
+            </div>
+
+            <div class="baritems0">
+                <button class="fa fa-search fa-1x"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- end second bar holder -->
+
+    <!-- the whole featured section -->
+
+    <div class="the-featured-container">
+        <div id="left-arrow-container"><span id="left-arrow" class="fa fa-caret-left fa-3x" onclick="imageslide(-1)"></span></div>
+
+
+        <!-- begin featured content -->
+
+        <div class="featured-container">
+            <div class="featured-container2">
+                <div class="featured-container3">
+                    <!--<div id="left-arrow-container"><span id="left-arrow" class="fa fa-caret-left fa-3x" onclick="imageslide(-1)"></span></div>-->
+                    <div class="featured-boxes fade"><img src="images/1.jpg">
+                        <div class="featured-boxes-helper"></div>
+                        <div class="featured-boxes-text-main"></div>
+                        <div class="featured-boxes-text">
+                            <div class="featured-boxes-text-top">
+                                <div class="featured-boxes-text-top">
+                                    <div class="featured-boxes-text-top-left"><span>FOR SALE</span></div>
+                                    <div class="featured-boxes-text-top-right"><span>FEATURED</span></div>
+                                </div>
+                            </div>
+                            <div class="featured-boxes-text-bottom">
+                                <div class="featured-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                                <div class="featured-boxes-text-bottom-right">
+                                    <form action="../index.php" method="post">
+                                        <button><span class="compare fa fa-share fa-1x"></span></button>
+                                    </form>
+                                    <script>
+                                        document.getElementsByClassName('compare').addEventListener('click', getComparisons);
+
+                                        function getComparisons() {
+                                            var xhr = new XMLHttpRequest();
+                                            xhr.open('GET', '')
+                                        }
+
+                                    </script>
+                                    <span class="fa fa-heart fa-1x"></span>
+                                    <span class="fa fa-camera fa-1x"></span></div>
+                            </div>
+                        </div>
+                        <div class="featured-features">
+                            <div class="featured-features-address">123 Main Street</div>
+                            <div class="featured-features-amenities">
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                                </div>
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-boxes fade"><img src="images/1.jpg">
+                        <div class="featured-boxes-helper"></div>
+                        <div class="featured-boxes-text-main"></div>
+                        <div class="featured-boxes-text">
+                            <div class="featured-boxes-text-top">
+                                <div class="featured-boxes-text-top">
+                                    <div class="featured-boxes-text-top-left"><span>FOR SALE</span></div>
+                                    <div class="featured-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                </div>
+                            </div>
+                            <div class="featured-boxes-text-bottom">
+                                <div class="featured-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                                <div class="featured-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                            </div>
+                        </div>
+                        <div class="featured-features">
+                            <div class="featured-features-address">123 Main Street</div>
+                            <div class="featured-features-amenities">
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                                </div>
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-boxes fade"><img src="images/1.jpg">
+                        <div class="featured-boxes-helper"></div>
+                        <div class="featured-boxes-text-main"></div>
+                        <div class="featured-boxes-text">
+                            <div class="featured-boxes-text-top">
+                                <div class="featured-boxes-text-top">
+                                    <div class="featured-boxes-text-top-left"><span>FOR SALE</span></div>
+                                    <div class="featured-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                </div>
+                            </div>
+                            <div class="featured-boxes-text-bottom">
+                                <div class="featured-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                                <div class="featured-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                            </div>
+                        </div>
+                        <div class="featured-features">
+                            <div class="featured-features-address">123 Main Street</div>
+                            <div class="featured-features-amenities">
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                                </div>
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-boxes fade"><img src="images/1.jpg">
+                        <div class="featured-boxes-helper"></div>
+                        <div class="featured-boxes-text-main"></div>
+                        <div class="featured-boxes-text">
+                            <div class="featured-boxes-text-top">
+                                <div class="featured-boxes-text-top">
+                                    <div class="featured-boxes-text-top-left"><span>FOR SALE</span></div>
+                                    <div class="featured-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                </div>
+                            </div>
+                            <div class="featured-boxes-text-bottom">
+                                <div class="featured-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                                <div class="featured-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                            </div>
+                        </div>
+                        <div class="featured-features">
+                            <div class="featured-features-address">123 Main Street</div>
+                            <div class="featured-features-amenities">
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                                </div>
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div id="right-arrow-container"><span id="right-arrow" class="fa fa-caret-right fa-3x" onclick="imageslide(1)"></span></div>-->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="featured-container">
+            <div class="featured-container2">
+                <div class="featured-container3">
+                    <!--<div id="left-arrow-container"><span id="left-arrow" class="fa fa-caret-left fa-3x" onclick="imageslide(-1)"></span></div>-->
+                    <div class="featured-boxes fade"><img src="images/3.jpg">
+                        <div class="featured-boxes-helper"></div>
+                        <div class="featured-boxes-text-main"></div>
+                        <div class="featured-boxes-text">
+                            <div class="featured-boxes-text-top">
+                                <div class="featured-boxes-text-top">
+                                    <div class="featured-boxes-text-top-left"><span>FOR SALE</span></div>
+                                    <div class="featured-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                </div>
+                            </div>
+                            <div class="featured-boxes-text-bottom">
+                                <div class="featured-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                                <div class="featured-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                            </div>
+                        </div>
+                        <div class="featured-features">
+                            <div class="featured-features-address">123 Main Street</div>
+                            <div class="featured-features-amenities">
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                                </div>
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-boxes fade"><img src="images/3.jpg">
+                        <div class="featured-boxes-helper"></div>
+                        <div class="featured-boxes-text-main"></div>
+                        <div class="featured-boxes-text">
+                            <div class="featured-boxes-text-top">
+                                <div class="featured-boxes-text-top">
+                                    <div class="featured-boxes-text-top-left"><span>FOR SALE</span></div>
+                                    <div class="featured-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                </div>
+                            </div>
+                            <div class="featured-boxes-text-bottom">
+                                <div class="featured-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                                <div class="featured-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                            </div>
+                        </div>
+                        <div class="featured-features">
+                            <div class="featured-features-address">123 Main Street</div>
+                            <div class="featured-features-amenities">
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                                </div>
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-boxes fade"><img src="images/3.jpg">
+                        <div class="featured-boxes-helper"></div>
+                        <div class="featured-boxes-text-main"></div>
+                        <div class="featured-boxes-text">
+                            <div class="featured-boxes-text-top">
+                                <div class="featured-boxes-text-top">
+                                    <div class="featured-boxes-text-top-left"><span>FOR SALE</span></div>
+                                    <div class="featured-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                </div>
+                            </div>
+                            <div class="featured-boxes-text-bottom">
+                                <div class="featured-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                                <div class="featured-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                            </div>
+                        </div>
+                        <div class="featured-features">
+                            <div class="featured-features-address">123 Main Street</div>
+                            <div class="featured-features-amenities">
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                                </div>
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-boxes fade"><img src="images/3.jpg">
+                        <div class="featured-boxes-helper"></div>
+                        <div class="featured-boxes-text-main"></div>
+                        <div class="featured-boxes-text">
+                            <div class="featured-boxes-text-top">
+                                <div class="featured-boxes-text-top">
+                                    <div class="featured-boxes-text-top-left"><span>FOR SALE</span></div>
+                                    <div class="featured-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                </div>
+                            </div>
+                            <div class="featured-boxes-text-bottom">
+                                <div class="featured-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                                <div class="featured-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                            </div>
+                        </div>
+                        <div class="featured-features">
+                            <div class="featured-features-address">123 Main Street</div>
+                            <div class="featured-features-amenities">
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                                </div>
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--<div id="right-arrow-container"><span id="right-arrow" class="fa fa-caret-right fa-3x" onclick="imageslide(1)"></span></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="featured-container">
+            <div class="featured-container2">
+                <div class="featured-container3">
+                    <!--<div id="left-arrow-container"><span id="left-arrow" class="fa fa-caret-left fa-3x" onclick="imageslide(-1)"></span></div>-->
+                    <div class="featured-boxes fade"><img src="images/4.jpg">
+                        <div class="featured-boxes-helper"></div>
+                        <div class="featured-boxes-text-main"></div>
+                        <div class="featured-boxes-text">
+                            <div class="featured-boxes-text-top">
+                                <div class="featured-boxes-text-top">
+                                    <div class="featured-boxes-text-top-left"><span>FOR SALE</span></div>
+                                    <div class="featured-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                </div>
+                            </div>
+                            <div class="featured-boxes-text-bottom">
+                                <div class="featured-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                                <div class="featured-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                            </div>
+                        </div>
+                        <div class="featured-features">
+                            <div class="featured-features-address">123 Main Street</div>
+                            <div class="featured-features-amenities">
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                                </div>
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-door-closed"><span>4 Bedrooms</span></span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-boxes fade"><img src="images/4.jpg">
+                        <div class="featured-boxes-helper"></div>
+                        <div class="featured-boxes-text-main"></div>
+                        <div class="featured-boxes-text">
+                            <div class="featured-boxes-text-top">
+                                <div class="featured-boxes-text-top">
+                                    <div class="featured-boxes-text-top-left"><span>FOR SALE</span></div>
+                                    <div class="featured-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                </div>
+                            </div>
+                            <div class="featured-boxes-text-bottom">
+                                <div class="featured-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                                <div class="featured-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                            </div>
+                        </div>
+                        <div class="featured-features">
+                            <div class="featured-features-address">123 Main Street</div>
+                            <div class="featured-features-amenities">
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                                </div>
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-boxes fade"><img src="images/4.jpg">
+                        <div class="featured-boxes-helper"></div>
+                        <div class="featured-boxes-text-main"></div>
+                        <div class="featured-boxes-text">
+                            <div class="featured-boxes-text-top">
+                                <div class="featured-boxes-text-top">
+                                    <div class="featured-boxes-text-top-left"><span>FOR SALE</span></div>
+                                    <div class="featured-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                </div>
+                            </div>
+                            <div class="featured-boxes-text-bottom">
+                                <div class="featured-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                                <div class="featured-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                            </div>
+                        </div>
+                        <div class="featured-features">
+                            <div class="featured-features-address">123 Main Street</div>
+                            <div class="featured-features-amenities">
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                                </div>
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-boxes fade"><img src="images/4.jpg">
+                        <div class="featured-boxes-helper"></div>
+                        <div class="featured-boxes-text-main"></div>
+                        <div class="featured-boxes-text">
+                            <div class="featured-boxes-text-top">
+                                <div class="featured-boxes-text-top">
+                                    <div class="featured-boxes-text-top-left"><span>FOR SALE</span></div>
+                                    <div class="featured-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                </div>
+                            </div>
+                            <div class="featured-boxes-text-bottom">
+                                <div class="featured-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                                <div class="featured-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                            </div>
+                        </div>
+                        <div class="featured-features">
+                            <div class="featured-features-address">123 Main Street</div>
+                            <div class="featured-features-amenities">
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                                </div>
+                                <div class="featured-features-amenities-boxes">
+                                    <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div id="right-arrow-container"><span id="right-arrow" class="fa fa-caret-right fa-3x" onclick="imageslide(1)"></span></div>-->
+                </div>
+            </div>
+        </div>
+
+
+        <div id="right-arrow-container"><span id="right-arrow" class="fa fa-caret-right fa-3x" onclick="imageslide(1)"></span></div>
+        <script>
+            function showPages() {
+                var x = document.getElementsByClassName('dots');
+                for (i = 0; i < x.length; i++) {
+                    x[i].innerHTML = "Hello";
+                }
+
+            }
+
+        </script>
+
+
+
+        <div style="text-align:center" class="dots-holder">
+            <span class="dots" onclick="currentslide(1)"></span>
+            <span class="dots" onclick="currentslide(2)"></span>
+            <span class="dots" onclick="currentslide(3)"></span>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- end the featured container -->
+
+    <!-- begin other code -->
+
+    <!--<div style="text-align:center" class="dots-holder">
+        <span class="dots" onclick="currentslide(1)"></span>
+        <span class="dots" onclick="currentslide(2)"></span>
+        <span class="dots" onclick="currentslide(3)"></span>
+    </div>-->
+
+    <!-- the whole featured section -->
+
+    <!-- the sort portion -->
+
+
+
+
+    <!-- the sort portion -->
+
+    <div id="main-listings-text">
+        <div id="main-listings-text2">OUR LATEST LISTINGS</div>
+        <div class="main-listings-sortby">
+            <select>
+                <option>Date Descending</option>
+                <option>Date Ascending</option>
+            </select>
+            <span class="fa fa-list fa-1x"></span>
+            <span class="fa fa-th fa-1x"></span>
+        </div>
+    </div>
+
+    <!-- the main content portion -->
+    <!--
+    <div id="main-content-portion">
+
+        <div id="main-featured-listing">
+
+            <?php foreach ($homes as $home) :?>
+
+            <div class="main-boxes fade"><img src="../images/4.jpg">
+                <div class="main-boxes-helper"></div>
+                <div class="main-boxes-text-main"></div>
+                <div class="main-boxes-text">
+                    <div class="main-boxes-text-top">
+                        <div class="main-boxes-text-top">
+                            <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                            <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                        </div>
+                    </div>
+                    <div class="main-boxes-text-bottom">
+                        <div class="main-boxes-text-bottom-left"><span class="price-icon-background">$<?php echo $home['price']; ?>
+    </span><br><span></span></div>
+                        <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                    </div>
+                </div>
+                <div class="main-features">
+                    <div class="main-features-address">
+                        <?php echo $home['address']; ?>
+                    </div>
+                    <div class="main-features-amenities">
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                        </div>
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <?php endforeach; ?>
+
+
+            <!--        <div class="main-boxes fade"><img src="../images/4.jpg">
+                <div class="main-boxes-helper"></div>
+                <div class="main-boxes-text-main"></div>
+                <div class="main-boxes-text">
+                    <div class="main-boxes-text-top">
+                        <div class="main-boxes-text-top">
+                            <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                            <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                        </div>
+                    </div>
+                    <div class="main-boxes-text-bottom">
+                        <div class="main-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                        <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                    </div>
+                </div>
+                <div class="main-features">
+                    <div class="main-features-address">123 Main Street</div>
+                    <div class="main-features-amenities">
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                        </div>
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-boxes fade"><img src="../images/4.jpg">
+                <div class="main-boxes-helper"></div>
+                <div class="main-boxes-text-main"></div>
+                <div class="main-boxes-text">
+                    <div class="main-boxes-text-top">
+                        <div class="main-boxes-text-top">
+                            <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                            <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                        </div>
+                    </div>
+                    <div class="main-boxes-text-bottom">
+                        <div class="main-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                        <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                    </div>
+                </div>
+                <div class="main-features">
+                    <div class="main-features-address">123 Main Street</div>
+                    <div class="main-features-amenities">
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                        </div>
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-boxes fade"><img src="../images/4.jpg">
+                <div class="main-boxes-helper"></div>
+                <div class="main-boxes-text-main"></div>
+                <div class="main-boxes-text">
+                    <div class="main-boxes-text-top">
+                        <div class="main-boxes-text-top">
+                            <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                            <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                        </div>
+                    </div>
+                    <div class="main-boxes-text-bottom">
+                        <div class="main-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                        <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                    </div>
+                </div>
+                <div class="main-features">
+                    <div class="main-features-address">123 Main Street</div>
+                    <div class="main-features-amenities">
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                        </div>
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-boxes fade"><img src="../images/4.jpg">
+                <div class="main-boxes-helper"></div>
+                <div class="main-boxes-text-main"></div>
+                <div class="main-boxes-text">
+                    <div class="main-boxes-text-top">
+                        <div class="main-boxes-text-top">
+                            <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                            <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                        </div>
+                    </div>
+                    <div class="main-boxes-text-bottom">
+                        <div class="main-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                        <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                    </div>
+                </div>
+                <div class="main-features">
+                    <div class="main-features-address">123 Main Street</div>
+                    <div class="main-features-amenities">
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                        </div>
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-boxes fade"><img src="../images/4.jpg">
+                <div class="main-boxes-helper"></div>
+                <div class="main-boxes-text-main"></div>
+                <div class="main-boxes-text">
+                    <div class="main-boxes-text-top">
+                        <div class="main-boxes-text-top">
+                            <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                            <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                        </div>
+                    </div>
+                    <div class="main-boxes-text-bottom">
+                        <div class="main-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                        <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                    </div>
+                </div>
+                <div class="main-features">
+                    <div class="main-features-address">123 Main Street</div>
+                    <div class="main-features-amenities">
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                        </div>
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-boxes fade"><img src="../images/4.jpg">
+                <div class="main-boxes-helper"></div>
+                <div class="main-boxes-text-main"></div>
+                <div class="main-boxes-text">
+                    <div class="main-boxes-text-top">
+                        <div class="main-boxes-text-top">
+                            <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                            <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                        </div>
+                    </div>
+                    <div class="main-boxes-text-bottom">
+                        <div class="main-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                        <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                    </div>
+                </div>
+                <div class="main-features">
+                    <div class="main-features-address">123 Main Street</div>
+                    <div class="main-features-amenities">
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                        </div>
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-boxes fade"><img src="../images/4.jpg">
+                <div class="main-boxes-helper"></div>
+                <div class="main-boxes-text-main"></div>
+                <div class="main-boxes-text">
+                    <div class="main-boxes-text-top">
+                        <div class="main-boxes-text-top">
+                            <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                            <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                        </div>
+                    </div>
+                    <div class="main-boxes-text-bottom">
+                        <div class="main-boxes-text-bottom-left"><span>$30,000</span><br><span></span></div>
+                        <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                    </div>
+                </div>
+                <div class="main-features">
+                    <div class="main-features-address">123 Main Street</div>
+                    <div class="main-features-amenities">
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-th-large fa-1x"><span>3,500 sq. ft.</span></span><br><span class="fa fa-bed fa-1x"><span>8 Rooms</span></span>
+                        </div>
+                        <div class="main-features-amenities-boxes">
+                            <span class="fa fa-door-closed"></span><span>4 Bedrooms</span><br><span class="fa fa-shower fa-1x"><span>2 Baths</span></span>
+                        </div>
+                    </div>
+                </div>-->
+    <!-- 
+        </div>
+    </div>
+ -->
+    <div id="pagination">
+        <a class='prevnext' href=>
+            <<</a>
+
+                <a class='prevnext' href=''>
+                    <</a>
+
+
+                        <span class='prevnext'>1</span>
+                        <span class='prevnext'>2</span>
+                        <span class='prevnext'>3</span>
+                        <a class='prevnext' href=''>></a>
+                        <a class='prevnext' href=''>>></a>
+
+</div>
+
+                        <div id="main-content-portion">
+
+                            <div id="main-featured-listing">
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span>Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-boxes fade"><img src="images/4.jpg">
+                                    <div class="main-boxes-helper"></div>
+                                    <div class="main-boxes-text-main"></div>
+                                    <div class="main-boxes-text">
+                                        <div class="main-boxes-text-top">
+                                            <div class="main-boxes-text-top">
+                                                <div class="main-boxes-text-top-left"><span>FOR SALE</span></div>
+                                                <div class="main-boxes-text-top-right"><span class="featured-icon-background">FEATURED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-boxes-text-bottom">
+                                            <div class="main-boxes-text-bottom-left">$30,000<span class="price-icon-background">
+    </span><br><span></span></div>
+                                            <div class="main-boxes-text-bottom-right"><span class="fa fa-share fa-1x"></span><span class="fa fa-heart fa-1x"></span><span class="fa fa-camera fa-1x"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="main-features">
+                                        <div class="main-features-address">
+                                            123 Main Street
+                                        </div>
+                                        <div class="main-features-amenities">
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-th-large fa-1x"><span><?php echo $home['sqr_ft']; ?> sq. ft</span></span><br><span class="fa fa-car fa-1x"><span><?php echo $home['garages']; ?> Garages</span></span>
+                                            </div>
+                                            <div class="main-features-amenities-boxes">
+                                                <span class="fa fa-door-closed"></span><span><?php echo $home['bdrms']; ?> Bedrooms</span><br><span class="fa fa-shower fa-1x"><span><?php echo $home['baths']; ?> Bathrooms</span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+    <!--original end pag div-->
+    
+    
+    <div id="pagination2">
+        <a class='prevnext' href=>
+            <<</a>
+
+                <a class='prevnext' href=''>
+                    <</a>
+
+
+                        <span class='prevnext'>1</span>
+                        <span class='prevnext'>2</span>
+                        <span class='prevnext'>3</span>
+                        <a class='prevnext' href=''>></a>
+                        <a class='prevnext' href=''>>></a>
+
+</div>
+    </div>
+    </div>
+    
+    <footer>
+        <div id="footer-box">
+            <div id="left-footer">
+
+                <div id="iphone"><img src="images/6stempf.png"></div>
+
+                <div id="app-info">
+                    <h1>Download Gemaroo App</h1>
+                    <p>Use our app to have 11,289 rental properties at hand</p>
+                    <div id="buttons">
+                        <div id="playstore">
+                            <button type="submit" id="app-buttons" class="fas fa-play"> <span>PlayStore</span></button>
+                        </div>
+                        <div id="playstore">
+                            <button type="submit" id="app-buttons" class="fab fa-apple fa-2x"> <span>AppStore</span></button>
+                        </div>
+                    </div>
+                    <div id="socialmedia">
+                        <span class="fab fa-facebook-f fa-1x"></span>
+
+                        <span class="fab fa-twitter fa-1x"></span>
+                    </div>
+                    <div id="copyright">2006-2018 Gemaroo</div>
+                </div>
+
+            </div>
+
+
+            <div id="right-footer">
+                <div id="right-1">
+                    <p id="for">For Tenants</p>
+                    <p>About Gemaroo</p>
+                    <p>Sign Up for free</p>
+                    <p>This is us</p>
+                    <p>Wonen-OK</p>
+                    <p>Gemaroo App</p>
+                </div>
+                <div id="right-2">
+                    <p id="for">For Advertisers</p>
+                    <p>About Gemaroo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+<div id="fixed-cart">
+        <div id="fixed-arrow">
+            <div id="cart">
+                <div class="main-item menu">
+                    <span class="line line01"></span>
+                    <span class="line line02"></span>
+                    <span class="line line03"></span>
+                </div>
+            </div>
+        </div>
+        <div id="fixed-text">
+            <div id="fixed-comparison-style">COMPARISON</div>
+            <div id="fixed-housing-style">
+                <img src="../images/1.jpg">
+                <div id="fixed-housing-text">
+                
+                123 Main St.
+                </div>
+            </div>
+            <div id="fixed-housing-style">
+                <img src="../images/1.jpg">
+                <div id="fixed-housing-text">123 Main St.
+                </div>
+            </div>
+            <div id="fixed-housing-style">
+                <img src="../images/1.jpg">
+                <div id="fixed-housing-text">123 Main St.
+                </div>
+            </div>
+            <div id="fixed-compare-button"><input type="button" value="Compare"></div>
+        </div>
+    </div>
+</body>
+<script>
+    $(function() {
+        $('#cart').click(function() {
+            $('#cart').toggleClass('openclose');
+            $('#fixed-text').toggle();
+        });
+        /*
+        $('#cart').click(function(){
+            $('#cart').css({'background':'red'});
+        }, function(){
+            $('#cart').css({'background':'green'});
+        });
+        */
+        /*
+                function getRandomColor() {
+                    var letters = '0123456789ABCDEF';
+                    var color = '#';
+                    for (var i = 0; i < 6; i++) {
+                        color += letters[Math.floor(Math.random() * 16)];
+                    }
+                    return color;
+                }
+
+                function setRandomColor() {
+                    $(".featured-icon-background").css("background-color", getRandomColor());
+                }
+                
+                setRandomColor();
+        */
+        $("#cart").click(function() {
+            $(".menu").toggleClass("close");
+        });
+    });
+</script>    
+
+</body>
+
+
+
+
+
+
+<script>
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+
+    function setRandomColor() {
+        var x = document.getElementsByClassName('featured-icon-background');
+        for (i = 0; i < x.length; i++) {
+            x[i].style.backgroundColor = getRandomColor();
+        }
+        return;
+    }
+
+    setRandomColor();
+
+    var index = 1;
+    screenslider(1);
+
+    function imageslide(x) {
+        index = index + x;
+        screenslider(index);
+        effect();
+    }
+
+    function currentslide(x) {
+        screenslider(index = x);
+    }
+
+    function screenslider(a) {
+        var x = document.getElementsByClassName('featured-container');
+        var dots = document.getElementsByClassName('dots');
+        var i;
+        for (i = 0; i < x.length; i++) {
+            if (a > x.length) {
+                index = 1;
+            }
+            if (a < 1) {
+                index = x.length;
+            }
+            x[i].style.display = "none";
+        }
+        x[index - 1].style.display = "block";
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            //logic here is we remove the active from all
+        }
+        dots[index - 1].className += " active";
+        //but we add the class active to the index
+    }
+
+    function listingSpace() {
+        var main = document.getElementsByClassName('main-boxes fade');
+        for (i = 0; i < main.length; i++) {
+            main[i].style.margin = "0px";
+        }
+    }
+
+    function displayItems() {
+        var x = document.getElementsByClassName('main-boxes');
+
+    }
+
+
+
+
+
+    // declaring "screenslider"
+
+</script>
