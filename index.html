@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
     <link rel="stylesheet" href="/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css">
-    <script src="../jquery-3.3.1.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="index.css">
     <title>gemaroo</title>
 </head>
@@ -574,6 +575,8 @@
 
 
         <div id="right-arrow-container"><span id="right-arrow" class="fa fa-caret-right fa-3x" onclick="imageslide(1)"></span></div>
+        
+        <!--
         <script>
             function showPages() {
                 var x = document.getElementsByClassName('dots');
@@ -582,9 +585,8 @@
                 }
 
             }
-
         </script>
-
+        -->
 
 
         <div style="text-align:center" class="dots-holder">
@@ -1513,51 +1515,11 @@
             <div id="fixed-compare-button"><input type="button" value="Compare"></div>
         </div>
     </div>
-</body>
-<script>
-    $(function() {
-        $('#cart').click(function() {
-            $('#cart').toggleClass('openclose');
-            $('#fixed-text').toggle();
-        });
-        /*
-        $('#cart').click(function(){
-            $('#cart').css({'background':'red'});
-        }, function(){
-            $('#cart').css({'background':'green'});
-        });
-        */
-        /*
-                function getRandomColor() {
-                    var letters = '0123456789ABCDEF';
-                    var color = '#';
-                    for (var i = 0; i < 6; i++) {
-                        color += letters[Math.floor(Math.random() * 16)];
-                    }
-                    return color;
-                }
-
-                function setRandomColor() {
-                    $(".featured-icon-background").css("background-color", getRandomColor());
-                }
-                
-                setRandomColor();
-        */
-        $("#cart").click(function() {
-            $(".menu").toggleClass("close");
-        });
-    });
-</script>    
-
-</body>
-
-
-
-
-
+</body> 
 
 <script>
-    function getRandomColor() {
+
+function getRandomColor() {
         var letters = '0123456789ABCDEF';
         var color = '#';
         for (var i = 0; i < 6; i++) {
@@ -1623,11 +1585,45 @@
         var x = document.getElementsByClassName('main-boxes');
 
     }
-
-
-
-
-
     // declaring "screenslider"
+    $(function() {
+        $('#cart').click(function() {
+            $('#cart').toggleClass('openclose');
+            $('#fixed-text').toggle();
+        });
+        /*
+        $('#cart').click(function(){
+            $('#cart').css({'background':'red'});
+        }, function(){
+            $('#cart').css({'background':'green'});
+        });
+        */
+        /*
+                function getRandomColor() {
+                    var letters = '0123456789ABCDEF';
+                    var color = '#';
+                    for (var i = 0; i < 6; i++) {
+                        color += letters[Math.floor(Math.random() * 16)];
+                    }
+                    return color;
+                }
 
+                function setRandomColor() {
+                    $(".featured-icon-background").css("background-color", getRandomColor());
+                }
+                
+                setRandomColor();
+        */
+        $("#cart").click(function() {
+            $(".menu").toggleClass("close");
+        });
+    });
 </script>
+</html>
+
+
+
+
+
+
+
